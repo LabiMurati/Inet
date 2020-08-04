@@ -1,0 +1,218 @@
+body,
+input,
+select,
+option,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.headerWrap {
+  width: 1920px;
+  height: 1037px;
+  display: flex;
+  background-image: url(../images/Banner-version-2.png);
+  margin: 0px;
+}
+.headerWrap img {
+  width: 100%;
+}
+.nav-width {
+  margin-top: 39.6px;
+  margin-left: 205px;
+  width: 1920px;
+  height: 134.37px;
+}
+.nav-width ul {
+  position: center;
+  display: flex;
+}
+.nav {
+  text-align: center;
+  margin: 20px;
+  padding: 0px 80px;
+}
+.nav ul {
+  list-style: none;
+  margin: 0px;
+  float: right;
+}
+.nav li {
+  padding: 0px 80px;
+  width: 70px;
+  height: 27px;
+}
+.nav a {
+  width: 70px;
+  height: 27px;
+  padding: 0px 80px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: medium;
+}
+.nav a:hover {
+  color: #02a8ff;
+}
+.nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #02a8ff;
+  transition: width 0.3s;
+}
+.nav a:hover::after {
+  width: 100%;
+  transition: ease-in;
+}
+.Logo {
+  position: absolute;
+  width: 86.97px;
+  height: 61.68px;
+}
+.drop-down-ul {
+  flex-direction: column;
+  position: absolute;
+  min-width: 96px;
+}
+.drop-down-ul a {
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.drop-down-ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+.section-1 {
+  width: 742px;
+  height: 307px;
+  margin: 0 auto;
+  z-index: 2;
+  position: absolute;
+  left: 100px;
+  top: 600px;
+}
+.section-1-text h1 {
+  width: 530;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 60px;
+}
+.section-1-text p {
+  width: 742px;
+  height: 109px;
+  margin-top: 29px;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #ffffff;
+  line-height: 35px;
+}
+
+.main_content {
+  background-color: #005681;
+}
+.Box-text-Read_More {
+  width: 459px;
+  height: 168px;
+  margin: 74px 91.6px 0px;
+}
+.Box-text-Read_More h1 {
+  color: #ffffff;
+  font-size: 70px;
+}
+
+.box1 h2 {
+  width: 443px;
+  height: 96px;
+
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 13px;
+}
+.box1 h4 {
+  font-size: 20px;
+  line-height: 38px;
+  color: #02a8ff;
+}
+.box1 p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 13px;
+}
+
+.box__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box__content {
+  width: 100%;
+  padding: 20px;
+}
+.box1 img {
+  width: 443px;
+  height: 366.3px;
+}
+.box1 {
+  width: calc(24.5% - 25px);
+  margin: 72px 91.6px 0px;
+  position: relative;
+  display: inline-block;
+}
+.box1 h2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.box1 p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.Contact_Form {
+  width: 100%;
+}
+.Contact_Form h1 {
+  width: 563.77px;
+  height: 167px;
+  color: #ffffff;
+  font-size: 70px;
+  position: relative;
+  left: 202px;
+  bottom: 100px;
+  margin: 0px;
+}
+.Contact_Form p {
+  width: 701px;
+  height: 71px;
+  position: relative;
+  color: #ffffff;
+  float: right;
+  right: 70px;
+  bottom: 200px;
+}
+.Contact_information {
+  position: relative;
+  width: 522.96px;
+  height: 221.68px;
+}
+.Contact_information p {
+  float: left;
+  width: 453.83px;
+  height: 32.01px;
+  left: 202.2px;
+  top: 71px;
+}
+.svg-line {
+  position: relative;
+  width: 834.26px;
+  height: 2.66px;
+  background-color: #02a8ff;
+  left: 202.2px;
+}
+.Contact_information img {
+  width: 43.29px;
+  height: 43.35px;
+  display: flex;
+  position: absolute;
+}
