@@ -12,10 +12,21 @@ textarea {
   height: 1037px;
   display: flex;
   background-image: url(../images/Banner-version-2.png);
+  background-size: cover;
+  overflow: hidden;
   margin: 0px;
 }
+
 .headerWrap img {
   width: 100%;
+}
+.color-overlay {
+  width: 100%;
+  height: 1px;
+  background-size: cover;
+  position: absolute;
+  color: white;
+  padding: 20px;
 }
 .nav-width {
   margin-top: 39.6px;
@@ -23,68 +34,66 @@ textarea {
   width: 1920px;
   height: 134.37px;
 }
-.nav-width ul {
-  position: center;
-  display: flex;
-}
-.nav {
-  text-align: center;
-  margin: 20px;
-  padding: 0px 80px;
-}
-.nav ul {
-  list-style: none;
-  margin: 0px;
+
+nav ul {
+  position: relative;
+  right: 202px;
   float: right;
 }
-.nav li {
+
+nav li {
   padding: 0px 80px;
   width: 70px;
   height: 27px;
+  display: inline-block;
 }
-.nav a {
+
+nav a {
   width: 70px;
   height: 27px;
-  padding: 0px 80px;
   text-decoration: none;
   color: #ffffff;
   font-size: 21px;
-  font-weight: medium;
 }
-.nav a:hover {
-  color: #02a8ff;
-}
-.nav a::after {
-  content: "";
+li > a {
   display: block;
-  width: 0;
-  height: 2px;
-  background: #02a8ff;
-  transition: width 0.3s;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 0;
+  font-size: 18px;
 }
-.nav a:hover::after {
+
+li > a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
   width: 100%;
-  transition: ease-in;
+  top: 100%;
+  left: 0%;
+  background: #0eb4fe;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease-in;
 }
+li > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
 .Logo {
   position: absolute;
   width: 86.97px;
   height: 61.68px;
+  margin-bottom: 25.6;
 }
-.drop-down-ul {
-  flex-direction: column;
-  position: absolute;
-  min-width: 96px;
+.Icon-logo {
+  float: left;
+  left: 104px;
+  position: relative;
+  bottom: 23px;
 }
-.drop-down-ul a {
-  padding: 12px 16px;
-  text-decoration: none;
-}
-.drop-down-ul {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
+
 .section-1 {
   width: 742px;
   height: 307px;
@@ -95,12 +104,16 @@ textarea {
   top: 600px;
 }
 .section-1-text h1 {
+  position: relative;
+  left: 204px;
   width: 530;
   color: #ffffff;
   font-weight: bold;
   font-size: 60px;
 }
 .section-1-text p {
+  position: relative;
+  left: 204px;
   width: 742px;
   height: 109px;
   margin-top: 29px;
@@ -110,11 +123,148 @@ textarea {
   line-height: 35px;
 }
 
+.section-2 {
+  width: 1920px;
+  height: 934.76px;
+  background-color: #004a6f;
+}
+
+.section-2 h3 {
+  width: 355px;
+  height: 76px;
+  top: 161px;
+  position: relative;
+  left: 204px;
+  color: #ffffff;
+  font-size: 70px;
+}
+.section-2 h3 :nth-child(1) {
+  color: #02a8ff;
+}
+.section-2 b {
+  color: #02a8ff;
+}
+
+.section-2 p {
+  width: 700px;
+  height: 61px;
+  position: relative;
+  top: 236px;
+  left: 204px;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 35px;
+  float: left;
+  line-height: 30px;
+}
+.About {
+  position: relative;
+  object-fit: cover;
+  float: right;
+  top: 50px;
+  right: 203px;
+  bottom: 189px;
+  z-index: 1;
+}
+.Points {
+  position: relative;
+  object-fit: cover;
+  float: right;
+  top: 500px;
+  left: 620px;
+  bottom: 189px;
+}
+.button-read-more-about-us {
+  position: relative;
+  top: 400px;
+  left: 202px;
+  width: 256px;
+  height: 40px;
+  border: none;
+  color: #0eb5ff;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background: none;
+}
+
+#p1 {
+  width: 700px;
+}
+
+#p2 {
+  width: 700px;
+  top: 300px;
+}
+#p3 {
+  width: 700px;
+  top: 350px;
+  height: 62px;
+}
+
+.Section-images {
+  width: 1920px;
+  height: 1032px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Sectiom-images-text {
+  width: 869px;
+  height: 169px;
+}
+.Sectiom-images-text b {
+  color: #02a8ff;
+}
+.Section-images h1 {
+  text-align: center;
+  position: relative;
+  color: #00537e;
+  font-size: 70px;
+  line-height: 40px;
+}
+.Section-images p {
+  text-align: center;
+  position: relative;
+  color: #00537e;
+  top: 31.5px;
+  font-size: 25px;
+  line-height: 40px;
+}
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1700px;
+  height: 334px;
+  flex-wrap: wrap;
+  bottom: 118px;
+  object-fit: cover;
+}
+.single-img {
+  margin: 0px 50px 0px;
+}
+
 .main_content {
+  width: 1920px;
   background-color: #005681;
 }
+.main_header {
+  width: 1920px;
+}
 .Box-text-Read_More {
-  width: 459px;
+  width: 470px;
   height: 168px;
   margin: 74px 91.6px 0px;
 }
@@ -122,56 +272,156 @@ textarea {
   color: #ffffff;
   font-size: 70px;
 }
+.Box-text-Read_More b {
+  color: #0eb4fe;
+}
+.about-primary-buton {
+  position: relative;
+  width: 259px;
+  height: 62px;
+  left: 204px;
+  top: 300px;
+  background-color: #005681;
+  color: #02a8ff;
+  border-radius: 50px;
+  border-style: none;
+  outline: none;
+}
 
-.box1 h2 {
+.boxes-section h2 {
   width: 443px;
   height: 96px;
-
   font-size: 40px;
   line-height: 40px;
   margin-top: 13px;
 }
-.box1 h4 {
+.boxes-section h4 {
   font-size: 20px;
   line-height: 38px;
   color: #02a8ff;
 }
-.box1 p {
+.boxes-section p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 13px;
 }
 
-.box__thumbnail img {
+.boxes__thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.box__content {
+.boxes__content {
   width: 100%;
   padding: 20px;
 }
-.box1 img {
+.boxes-section img {
   width: 443px;
   height: 366.3px;
 }
-.box1 {
+.boxes-section {
   width: calc(24.5% - 25px);
   margin: 72px 91.6px 0px;
   position: relative;
   display: inline-block;
 }
-.box1 h2 {
+.boxes-section h2 {
   color: #ffffff;
   font-weight: bold;
 }
-.box1 p {
+.boxes-section p {
   color: #ffffff;
   font-size: 20px;
 }
-.Contact_Form {
-  width: 100%;
+
+.info-contact {
+  width: 522.96px;
+  height: 221.68px;
+  position: relative;
+  float: left;
+  right: 430px;
+  flex-direction: column;
+  display: block;
 }
+.info-contact img {
+  width: 43.29px;
+  height: 43.35px;
+}
+.info-contact span {
+  width: 318px;
+  height: 31px;
+  line-height: 38px;
+  font-size: 25px;
+}
+.contact-hr {
+  position: relative;
+  bottom: 50px;
+  float: left;
+  left: 204px;
+  width: 631px;
+  height: 2px;
+  background: rgb(67, 234, 255);
+  background: linear-gradient(
+    91deg,
+    rgba(57, 223, 255, 1) 70%,
+    rgba(205, 253, 253) 30%
+  );
+}
+
+.Pattern__background {
+  position: relative;
+  margin-top: 163px;
+}
+.Pattern__background b {
+  color: #0eb5ff;
+}
+.Contact_Form ul {
+  width: 50px;
+  flex-wrap: wrap;
+  position: relative;
+  float: left;
+  right: 435px;
+  display: block;
+}
+.Contact_Form ul img {
+  padding: 0px 10px 41px;
+}
+.Contact_Form p {
+  position: relative;
+  font-size: 25;
+  line-height: 38px;
+  bottom: 30px;
+  float: center;
+}
+.contact-form-text {
+  width: 300px;
+  position: relative;
+  float: left;
+  top: 241px;
+  left: 60px;
+}
+.primary-buton {
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 870px;
+  width: 218px;
+  height: 67px;
+  background-color: #00263b;
+  color: #ffffff;
+  border-radius: 50px;
+  outline: none;
+}
+
+#Icon {
+  width: 30px;
+  top: 120px;
+  left: 850px;
+  position: relative;
+  background-position: left;
+  clear: both;
+}
+
 .Contact_Form h1 {
   width: 563.77px;
   height: 167px;
@@ -191,7 +441,7 @@ textarea {
   right: 70px;
   bottom: 200px;
 }
-.Contact_information {
+.Contact__information {
   position: relative;
   width: 522.96px;
   height: 221.68px;
@@ -215,4 +465,175 @@ textarea {
   height: 43.35px;
   display: flex;
   position: absolute;
+}
+.contact__area {
+  position: relative;
+  width: 756.08px;
+  height: 274.43px;
+  float: right;
+  left: 960.7px;
+}
+.Pattern__background {
+  width: 1920px;
+  height: 825px;
+}
+
+.Pattern__background p {
+  width: 701px;
+  height: 71px;
+  font-size: 25px;
+  line-height: 38px;
+  position: relative;
+  bottom: 245px;
+}
+.contact__area input text {
+  width: 361.59px;
+  height: 71.2px;
+}
+.Text-area {
+  width: 756.08px;
+  height: 274.43px;
+}
+.email {
+  padding: 31px 30px 0px;
+}
+.Field_information {
+  float: left;
+  position: relative;
+  bottom: 110px;
+  width: 756.08px;
+  height: 448.51px;
+}
+.contact_form {
+  float: right;
+  position: relative;
+  left: 560px;
+  width: 756.08px;
+  height: 448.51px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 361.59px;
+  height: 71.2px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  resize: vertical;
+  box-sizing: border-box;
+  float: right;
+  margin-top: 31.2px;
+  left: 100px;
+  bottom: 100px;
+  padding: 0px 70px;
+}
+.Contact_Form textarea {
+  width: 756px;
+  height: 274px;
+}
+
+.textinput {
+  margin-right: 32px;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  outline: 0;
+  color: #08c474;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  bottom: 377px;
+  left: 140px;
+  background: none;
+}
+
+.center {
+  width: 246px;
+  height: 40px;
+  position: relative;
+  top: 300.7px;
+  text-align: center;
+  float: center;
+  left: 510px;
+}
+.GoogleImage {
+  width: 1920px;
+  height: 519px;
+  object-fit: cover;
+}
+.inet-footer {
+  display: inline;
+  position: absolute;
+  width: 1920px;
+  height: 292px;
+  background-color: #002135;
+}
+.inet-footer nav {
+  left: 600px;
+  top: 15px;
+  position: relative;
+  width: 714px;
+  height: 70px;
+  line-height: 26px;
+  padding: 0px 45px 0px;
+}
+.footer-logo {
+  width: 98.35px;
+  height: 69.75px;
+  position: relative;
+  top: 70px;
+  left: 205.6px;
+  bottom: 151, 6px;
+}
+.footer-icons {
+  float: right;
+
+  bottom: 50px;
+  right: 500.7px;
+  position: relative;
+  width: 225.59px;
+  height: 72.43px;
+}
+.footer-icons h1 {
+  text-align: center;
+  color: #ffffff;
+  width: 80px;
+  height: 26px;
+  left: 500px;
+}
+.footer-icons img {
+  padding-top: 1px;
+  padding: 0px 5px 0px;
+}
+.footer-policy {
+  position: relative;
+  top: 90px;
+  color: #ffffff;
+  float: right;
+  text-align: center;
+  width: 187px;
+  height: 72px;
+  right: 221px;
+}
+.footer-policy p:nth-child(2) {
+  padding-top: 20px;
+}
+.horizontal-line {
+  position: relative;
+  left: 290.2px;
+  margin-top: 53.5px;
+  width: 1513px;
+  border-top: 2px solid #34dbff;
+}
+.horizontal-line span {
+  position: relative;
+  top: 28.5px;
+  color: #959595;
+  line-height: 23px;
+  font-size: 18px;
 }
