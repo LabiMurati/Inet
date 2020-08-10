@@ -1,0 +1,20 @@
+<svg id="Email_Icon" data-name="Email Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.547" height="49.547" viewBox="0 0 49.547 49.547">
+  <defs>
+    <linearGradient id="linear-gradient" y1="-0.659" x2="0.693" y2="0.946" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#02a8ff"/>
+      <stop offset="0.183" stop-color="#09afff"/>
+      <stop offset="0.463" stop-color="#1ec5ff"/>
+      <stop offset="0.804" stop-color="#40e7ff"/>
+      <stop offset="1" stop-color="#57ffff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.251" y1="0.122" x2="0.596" y2="0.645" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_29" data-name="Group 29" transform="translate(12.425 16.697)">
+    <path id="Path_221" data-name="Path 221" d="M404.131,1211.8a1.363,1.363,0,0,0-1.362-1.36h0l-21.957.033a1.362,1.362,0,0,0-1.36,1.364l.018,13.4a1.361,1.361,0,0,0,1.362,1.36h0l21.957-.033a1.364,1.364,0,0,0,1.36-1.364Zm-2.857,0-9.472,7.24-9.493-7.211Zm-4.864,9.5,5.03,3.9-19.3.029,5.074-3.928a.681.681,0,1,0-.835-1.076l-5.552,4.3-.017-12.07,10.6,7.978a.68.68,0,0,0,.775,0l10.579-8.01.017,12.1-5.543-4.294a.681.681,0,0,0-.835,1.076Z" transform="translate(-379.451 -1210.441)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Group_31" data-name="Group 31" transform="translate(0 0)">
+    <g id="Group_30" data-name="Group 30" transform="translate(0)">
+      <path id="Path_222" data-name="Path 222" d="M369.87,1213.819a24.774,24.774,0,1,1,24.774-24.774A24.8,24.8,0,0,1,369.87,1213.819Zm0-48.282a23.508,23.508,0,1,0,23.509,23.508A23.535,23.535,0,0,0,369.87,1165.537Z" transform="translate(-345.096 -1164.272)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>
